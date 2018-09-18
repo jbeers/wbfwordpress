@@ -1,0 +1,241 @@
+html, body, .site-content {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+
+	font-family: Open Sans, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Montserrat;
+	font-weight: 800;
+}
+
+a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ddd;
+}
+
+.site-content {
+	background: #111;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+.left {
+	width: 350px;
+}
+
+.right {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	color: #ddd;
+	background: #333;
+	background-image: url( './images/chalkboard2.png' );
+}
+
+.navbar {
+	height: 60px;
+	background: #999;
+}
+
+.page-content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+}
+
+.post__wrapper {
+	margin: 0 0 40px 0;
+	padding: 20px;
+	color: #ddd;
+}
+
+.post__content {
+	display: flex;
+}
+
+.post__content-text {
+	flex: 1;
+	padding: 10px;
+}
+
+.post__content-image {
+	width: 200px;
+}
+
+.post__title {
+	font-size: 3rem;
+	text-shadow: -5px 5px #333;
+}
+
+.post__wrapper:nth-child( even ) .post__content {
+	flex-direction: row-reverse;
+}
+
+.post__wrapper:nth-child( even ) .post__content-image {
+	transform: rotate( 5deg );
+}
+
+.post__body__text {
+	flex: 1;
+	position: relative;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+.post__content-image {
+	width: 256px;
+	height: 256px;
+	margin: 20px;
+	transform: rotate( -5deg );
+	position: relative;
+	top: -30px;
+	border: 10px solid #ddd;
+	border-bottom: 50px solid #ddd;
+	box-shadow: 8px 5px 15px 0px black;
+	overflow: hidden;
+	display: flex;
+	backface-visibility: hidden;
+}
+
+.post__content-image img {
+	object-fit: cover;
+}
+
+.post__read__more {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	color: #ddd;
+}
+
+.post__read__more:visited {
+	color: #ddd;
+}
+
+
+
+
+/****** NAVIGATION ***********/
+
+.nav__wrapper {
+	position: fixed;
+	height: 60px;
+	width: 100%;
+}
+
+.main-nav {
+	top: 0px;
+	height: 60px;
+	width: 400px;
+	font-size: 1.2rem;
+	display: flex;
+	right: 20px;
+	position: fixed;
+	list-style-type: none;
+	justify-content: space-around;
+}
+
+.main-nav .menu_item {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+/******* SIDE NAV ********/
+
+.side__nav {
+	background-image: url( './images/greenplaid4.png' );
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: inset -8px 0 20px 1px rgba(0,0,0,0.65),
+		0px 0 12px 8px rgba(0,0,0,0.8);
+	z-index: 2;
+	position:relative;
+}
+
+.side__nav__info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4rem;
+	color: #000;
+	width: 90%;
+	background: rgba( 255, 255, 255, 0.5 );
+}
+
+.side__nav__info {
+	list-style-type: none;
+	padding-left: none;
+	font-size: 1.15rem;
+	font-weight: normal;
+}
+
+.side__nav__info li {
+	margin-bottom: 8px;
+	text-align: left;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background: #333;
+	background-image: url( './images/chalkboard2.png' );
+}
+
+.social__icon {
+	font-size: 2rem;
+	margin: 10px;
+
+	text-shadow:
+		-1px -1px 0 #fff,
+		1px 1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px -1px 0 #fff;
+}
+
+.social__icon--facebook {
+	color: #3B5998;
+	outline-color: #fff;
+}
+
+.social__icon--instagram {
+	color: #f9598d;
+}
+
+.portrait {
+	margin-top: 40px;
+}
